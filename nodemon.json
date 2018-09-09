@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "build",
+        "public",
+        "server",
+        "server.js"
+    ],
+    "ext": "css, js, json, mustache, png, svg"
+}

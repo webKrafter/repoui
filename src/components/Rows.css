@@ -1,0 +1,43 @@
+.rows > * {
+    border-bottom: 1px solid #DDF;
+    display: table;
+    width: 100%;
+}
+
+.rows > :hover {
+    background-color: #F8F8FF;
+}
+
+.rows > :first-child {
+    border-bottom: 1px solid #877;
+}
+
+.rows > :first-child:hover {
+    background-color: inherit;
+}
+
+.rows > .active,
+.rows > .active:hover {
+    background-color: #F4F4FF;
+}
+
+.rows > * > * {
+    display: table-cell;
+    padding: 1%;
+}
+
+.rows.three-cols > * > :first-child {
+    width: 8%;
+}
+
+.rows.three-cols > * > :nth-child( 2 ) {
+    width: 23%;
+}
+
+.rows.three-cols > * > :last-child {
+   width: 63%;
+}
+
+.rows.three-cols > * > :last-child > * {
+    cursor: pointer;
+ }

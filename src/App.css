@@ -1,0 +1,82 @@
+.app {
+  width: 100%;
+}
+
+.app > * {
+  width: 100%;
+}
+
+.app > :not(main) {
+  display: table;
+  height: 5vh;
+}
+
+.app > :not(main) > * {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.app > header {
+  background-color: #222;
+}
+
+.app > header .caption {
+   color: #FFF;
+  font-size: 120%;
+}
+
+.app > .intro * {
+  border-bottom: solid 1px #556600;
+  font-size: 100%;
+}
+
+.app > .intro *,
+.app > header .caption {
+  font-weight: bold;
+}
+
+.app > main {
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+}
+
+.app > footer {
+  border-top: solid 1px #556600;
+}
+
+.app > footer > .engine-info{
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-items: center;
+  width: 20.18%;
+}
+
+.app > footer > .engine-info > * {
+  display: inline-block;
+  font-size: 60%;
+}
+
+.app > footer .logo-link .engine-logo {
+  animation: app-logo-spin infinite 20s linear;
+}
+
+.app > footer .logo-link img[alt='redux'] {
+  width: 1.25vw;
+}
+
+.app footer .and {
+  color: #FFF;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@keyframes app-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
