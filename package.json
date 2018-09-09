@@ -40,7 +40,7 @@
   "name": "sc-universal",
   "repository": {
     "type": "git",
-    "url": "https://github.com/steveswork/repoui.git"
+    "url": "git:github.com/steveswork/repoui.git"
   },
   "scripts": {
     "build": "react-scripts build",
